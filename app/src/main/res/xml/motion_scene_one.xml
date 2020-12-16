@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+        motion:constraintSetEnd="@+id/end"
+        motion:constraintSetStart="@+id/start"
+        motion:duration="1500">
+
+        <KeyFrameSet>
+
+            <KeyAttribute
+                android:scaleX="0"
+                android:scaleY="0"
+                android:translationY="-400dp"
+                motion:framePosition="0"
+                motion:motionTarget="@id/view1" />
+
+            <KeyAttribute
+                android:scaleX="0.1"
+                android:scaleY="0.1"
+                android:translationY="-200dp"
+                motion:framePosition="20"
+                motion:motionTarget="@id/view1" />
+
+            <KeyAttribute
+                android:scaleX="0.3"
+                android:scaleY="0.3"
+                android:translationY="8dp"
+                motion:framePosition="50"
+                motion:motionTarget="@id/view1" />
+
+            <KeyAttribute
+                android:scaleX="9"
+                android:scaleY="9"
+                motion:framePosition="100"
+                motion:motionTarget="@id/view1" />
+
+            <KeyAttribute
+                android:alpha="0"
+                android:scaleX="0.8"
+                android:scaleY="0.8"
+                motion:framePosition="0"
+                motion:motionTarget="@id/view2">
+                <CustomAttribute
+                    motion:attributeName="textColor"
+                    motion:customColorValue="#222" />
+
+            </KeyAttribute>
+
+
+            <KeyAttribute
+                android:alpha="1"
+                android:scaleX="1"
+                android:scaleY="1"
+                motion:framePosition="15"
+                motion:motionTarget="@id/view2">
+                <CustomAttribute
+                    motion:attributeName="textColor"
+                    motion:customColorValue="#222" />
+
+
+            </KeyAttribute>
+
+            <KeyAttribute
+                motion:framePosition="100"
+                motion:motionTarget="@id/view2">
+                <CustomAttribute
+                    motion:attributeName="textColor"
+                    motion:customColorValue="#fff" />
+
+
+            </KeyAttribute>
+
+        </KeyFrameSet>
+
+    </Transition>
+
+
+
+</MotionScene>
